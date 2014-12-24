@@ -1,3 +1,4 @@
+<?php
 //Create by Kenxox (24/12/2014) http://www.facebook.com/XOXcore
 function encodeKX($_s)
 {
@@ -109,3 +110,5 @@ function decodeKX($_s)
 
   return $_sA;
 }
+
+?>
