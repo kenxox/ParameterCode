@@ -20,7 +20,6 @@ function encodeKX($_s)
   for($_i=0;$_i<$_sleg;$_i++)
   {
     $_c = substr($_s,($_i+1)*-1,1);
-    echo $_c;
     if(is_numeric($_c )){
       $_iV = intval($_c);
       $_sA .= $_arStrCode[$_iV].'+';
@@ -44,8 +43,6 @@ function encodeKX($_s)
     }
 
   }
-  echo "<br>".$_sA;
-
   return base64_encode($_sA);
 }
 
@@ -107,7 +104,6 @@ function decodeKX($_s)
       }
     }
   }
-
   return $_sA;
 }
 
